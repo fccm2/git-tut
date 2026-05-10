@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>git-tutorial</title>
+<meta name="description" content="git-tutorial" />
+<meta name="author" content="fccm, 2026" />
+<meta name="keywords" content="git, tutorial, file-history-management, " />
+<meta name="license" content="fdl, cc-by-sa_2.5 or later," />
+</head>
+<body>
+<pre>
+$ mkdir proj
+$ cd proj/
+</pre>
+<pre>
+$ git init
+</pre>
+<pre>
+$ git add file.txt
+</pre>
+<pre>
+$ git commit -m "msg."
+</pre>
+sharing:
+<pre>
+$ cd ..
+$ zip -r proj.zip proj/
+</pre>
+and/or:
+<pre>
+$ tar cf proj.tar proj/
+$ gzip -9 proj.tar
+$ ll proj.tar.gz
+--  679 - proj.tar.gz
+</pre>
+or:
+<pre>
+$ tar cf proj.tar proj/
+$ lzma --best proj.tar
+$ ll proj.tar.lzma
+--  670 - proj.tar.lzma
+</pre>
+</body>
+</html>
