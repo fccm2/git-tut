@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>git-tut</title>
+<meta name="description" content="git-tutorial" />
+<meta name="author" content="fccm, 2026" />
+<meta name="keywords" content="git, tutorial, source-code-management, editing a project," />
+<meta name="license" content="FDL, CC-by-sa_2.5 OR Later, Spdx:Any" />
+</head>
+<body>
+<h2>git-tutorial</h2>
+<p>add'ng an <code>origin</code>:</p>
+<pre>
+$ cd ./proj-dir/
+$ cat .git/config
+</pre>
+<p><code>config</code> w/ <code>origin</code>:</p>
+<pre>
+$ git remote add origin https://w-host.ext/user_name/repo_name.git
+</pre>
+<pre>
+[remote "origin"]
+	url = https://w-host.ext/user_name/repo_name.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+</pre>
+<p>email-and-name field's should start w/ a tabulation<br />
+tab. / <code>'\t'</code>:</p>
+</body>
+</html>
+
